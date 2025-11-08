@@ -32,12 +32,6 @@ This project was created as a **portfolio experiment** to showcase creative fron
 
 ---
 
-## 📸 Preview  
-(Add screenshot or GIF of your app here once hosted)  
 
----
 
-## ⚙️ Setup Instructions  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/death-clock.git
+
