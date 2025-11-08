@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Death Clock 💀</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <!---------------------------------------------------------------------------------
+                                 intro-screen Section 
+  ------------------------------------------------------------------------------------>
+    <section id="intro">
+      <h1 class="glitch">💀 The Death Clock 💀</h1>
+      <p>🤨Ready to know when your clock stops ticking?</p>
+      <button id="start-btn">Enter the Chamber</button>
+    </section>
+
+    <!---------------------------------------------------------------------------------
+                                  Quiz Section
+  ------------------------------------------------------------------------------------>
+    <section id="quiz" class="hidden">
+      <h2>💯Answer Honestly…</h2>
+      <form id="lifestyle-form">
+        <label
+          >Age:
+          <input type="number" id="age" required min="1" max="120" />
+        </label>
+
+        <label
+          >Average Sleep (hours):
+          <input type="number" id="sleep" min="0" max="12" required />
+        </label>
+
+        <label
+          >Exercise per week (days):
+          <input type="number" id="exercise" min="0" max="7" required />
+        </label>
+
+        <label
+          >Diet type:
+          <select id="diet">
+            <option value="junk">Mostly Junk</option>
+            <option value="average">Average</option>
+            <option value="healthy">Healthy</option>
+          </select>
+        </label>
+
+        <label
+          >Smoking/Drinking habit:
+          <select id="smoke">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+
+        <label
+          >Stress level (1–10):
+          <input type="range" id="stress" min="1" max="10" value="5" />
+        </label>
+
+        <label
+          >Happiness level (1–10):
+          <input type="range" id="happy" min="1" max="10" value="5" />
+        </label>
+
+        <button type="submit">Reveal My Fate ☠️</button>
+      </form>
+    </section>
+
+    <!---------------------------------------------------------------------------------
+                                 Result Section 
+  ------------------------------------------------------------------------------------>
+    <section id="result" class="hidden">
+      <h2>Your Lifespan Ends In...</h2>
+      <div id="years-left" class="highlight"></div>
+      <div id="countdown"></div>
+      <p id="summary"></p>
+      <button id="retry">Try Again</button>
+    </section>
+
+    <div id="bg-overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
